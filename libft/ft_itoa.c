@@ -6,7 +6,7 @@
 /*   By: rcesar-d <rcesar-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 17:54:35 by rcesar-d          #+#    #+#             */
-/*   Updated: 2024/04/22 15:16:58 by rcesar-d         ###   ########.fr       */
+/*   Updated: 2024/04/22 17:39:55 by rcesar-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 static int	ft_numcount(int n)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	if (n > 0)
@@ -26,15 +26,15 @@ static int	ft_numcount(int n)
 			n = n / 10;
 			i++;
 		}
-		return(i);
+		return (i);
 	}
-	while( n < 0)
+	while (n < 0)
 	{
 		n = n / 10;
 		i++;
 	}
 	i++;
-	return(i);
+	return (i);
 }
 
 char	*ft_itoa(int n)

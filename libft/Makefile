@@ -6,7 +6,7 @@
 #    By: rcesar-d <rcesar-d@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/15 20:18:14 by rcesar-d          #+#    #+#              #
-#    Updated: 2024/04/22 19:29:11 by rcesar-d         ###   ########.fr        #
+#    Updated: 2024/04/25 15:45:16 by rcesar-d         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,23 +21,25 @@ CFILES = \
 		ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c\
 
 B_CFILES = \
+		ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
+		ft_lstdelone.c ft_lstclear.c \
 
 OFILES = $(CFILES:.c=.o)
 
-B_OFILES = $(B_CFILES: .c=.o)
+B_OFILES = $(B_CFILES:.c=.o)
 
 CC = @cc
 CFLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)
 
-$(NAME): $(OFILES)
+$(NAME): $(OFILES) $(B_OFILES)
 	@ar rcs $(NAME) $(OFILES) $(B_OFILES)
 	@echo "OFILES made!!!"
 
-so:
-	$(CC) -nostartfiles -fPIC $(CFLAGS) $(CFILES)
-	gcc -nostartfiles -shared -o libft.so $(OFILES)
+# so:
+# 	$(CC) -nostartfiles -fPIC $(CFLAGS) $(CFILES)
+# 	gcc -nostartfiles -shared -o libft.so $(OFILES)
 
 clean:
 	@rm -f $(OFILES) $(B_OFILES)

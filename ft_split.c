@@ -6,7 +6,7 @@
 /*   By: rcesar-d <rcesar-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 18:09:55 by rcesar-d          #+#    #+#             */
-/*   Updated: 2024/04/19 16:41:36 by rcesar-d         ###   ########.fr       */
+/*   Updated: 2024/05/08 19:54:10 by rcesar-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,3 +69,23 @@ char	**ft_split(char const *s, char c)
 	final_array[array_size] = NULL;
 	return (final_array);
 }
+
+/* #include <stdio.h>
+int main()
+{
+	char const *str = "hello world this is a test";
+	char delimiter = ' ';
+	char **result = ft_split(str, delimiter);
+	int i = 0;
+
+	if (result) {
+		while (result[i] != NULL) {
+			printf("Substring[%d]: %s\n", i, result[i]);
+			free(result[i]);  // Free each substring
+			i++;
+		}
+		free(result);  // Free the array of pointers
+	}
+
+	return 0;
+} */

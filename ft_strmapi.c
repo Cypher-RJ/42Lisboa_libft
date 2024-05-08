@@ -6,7 +6,7 @@
 /*   By: rcesar-d <rcesar-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 15:21:32 by rcesar-d          #+#    #+#             */
-/*   Updated: 2024/04/22 17:38:54 by rcesar-d         ###   ########.fr       */
+/*   Updated: 2024/05/08 19:56:12 by rcesar-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (str);
 }
 /* #include <stdio.h>
-#include "libft.h"
-
 // Sample callback function that converts characters to uppercase
 char to_uppercase(unsigned int i, char c) {
     if (c >= 'a' && c <= 'z') {

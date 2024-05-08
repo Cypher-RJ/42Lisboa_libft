@@ -6,7 +6,7 @@
 /*   By: rcesar-d <rcesar-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 17:45:10 by rcesar-d          #+#    #+#             */
-/*   Updated: 2024/04/17 18:41:44 by rcesar-d         ###   ########.fr       */
+/*   Updated: 2024/05/08 19:43:48 by rcesar-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,37 +42,30 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 }
 
 /* #include <stdio.h>
-#include <string.h>
+int main()
+{
+	char src[50] = "Example string for memmove";
+	char dest[50];
 
-// Assuming ft_memmove is declared in another file or above this main function
-extern void *ft_memmove(void *dest, const void *src, size_t n);
+	// Test 1: Basic test with non-overlapping regions
+	printf("Before ft_memmove: '%s'\n", src);
+	ft_memmove(dest, src, sizeof(src));
+	printf("After ft_memmove: '%s'\n", dest);
 
-int main() {
-    char src1[50] = "Hello, world!";
-    char dest1[50];
-    char src2[50] = "Hello, world!";
-    char dest2[50];
+	// Test 2: Overlapping regions, source starts before destination
+	ft_memmove(src + 5, src, 15);
+	printf("After ft_memmove with overlap (src before dest): '%s'\n", src);
 
-    // Test 1: Basic overlap test
-    printf("Before ft_memmove dest1: '%s'\n", src1);
-    ft_memmove(src1 + 5, src1, 10);
-    printf("After ft_memmove dest1: '%s'\n", src1);
+	// Resetting src for next test
+	strcpy(src, "Example string for memmove");
 
-    printf("Before memmove dest2: '%s'\n", src2);
-    memmove(src2 + 5, src2, 10);
-    printf("After memmove dest2: '%s'\n", src2);
+	// Test 3: Overlapping regions, destination starts before source
+	ft_memmove(src, src + 5, 15);
+	printf("After ft_memmove with overlap (dest before src): '%s'\n", src);
 
-    // Test 2: Non-overlapping
-    ft_memmove(dest1, "Sample text", 11);
-    memmove(dest2, "Sample text", 11);
-    printf("ft_memmove result: '%s'\n", dest1);
-    printf("memmove result: '%s'\n", dest2);
+	// Test 4: Check behavior with zero length
+	ft_memmove(dest, src, 0);
+	printf("After ft_memmove with zero length: '%s'\n", dest);
 
-    // Test 3: Move zero bytes
-    ft_memmove(dest1, src1, 0);
-    memmove(dest2, src2, 0);
-    printf("ft_memmove zero bytes result: '%s'\n", dest1);
-    printf("memmove zero bytes result: '%s'\n", dest2);
-
-    return 0;
+	return 0;
 } */

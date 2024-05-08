@@ -6,7 +6,7 @@
 /*   By: rcesar-d <rcesar-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 17:54:35 by rcesar-d          #+#    #+#             */
-/*   Updated: 2024/04/22 17:39:55 by rcesar-d         ###   ########.fr       */
+/*   Updated: 2024/05/08 19:36:41 by rcesar-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,3 +64,24 @@ char	*ft_itoa(int n)
 	}
 	return (num);
 }
+
+/* #include <stdio.h>
+int main()
+{
+	int numbers[] = {-2147483648, -1, 0, 1, 2147483647};
+	char *result;
+	int i = 0;
+	while (i < 5)
+	{
+		result = ft_itoa(numbers[i]);
+		if (result)
+		{
+			printf("ft_itoa(%d) = %s\n", numbers[i], result);
+			free(result);
+		}
+		else
+			printf("Memory allocation failed for ft_itoa(%d)\n", numbers[i]);
+		i++;
+	}
+	return 0;
+} */

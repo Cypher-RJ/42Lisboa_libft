@@ -6,7 +6,7 @@
 /*   By: rcesar-d <rcesar-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 17:47:40 by rcesar-d          #+#    #+#             */
-/*   Updated: 2024/04/17 18:41:50 by rcesar-d         ###   ########.fr       */
+/*   Updated: 2024/05/08 19:53:24 by rcesar-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,5 @@ int main()
 	if (result == NULL)
 		printf("Character '%c' not found in string.\n", character);
 	else
-		printf("Character '%c' found at position %ld.\n", 
-			character, result - str);
+		printf("Character '%c' found at position %ld.\n", character, result - str);
 } */

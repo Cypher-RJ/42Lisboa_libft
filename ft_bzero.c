@@ -6,7 +6,7 @@
 /*   By: rcesar-d <rcesar-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 17:15:00 by rcesar-d          #+#    #+#             */
-/*   Updated: 2024/04/17 18:40:43 by rcesar-d         ###   ########.fr       */
+/*   Updated: 2024/05/08 19:08:05 by rcesar-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,22 @@ void	ft_bzero(void *s, size_t n)
 		i++;
 	}
 }
+
+/* #include <stdio.h>
+
+int main()
+{
+	char str[50] = "Hello, world!";
+	printf("Before ft_bzero: %s\n", str);
+	ft_bzero(str, sizeof(str));
+	printf("After ft_bzero: ");
+
+	int i = 0;
+	while (i < sizeof(str))
+	{
+		printf("%d ", str[i]);
+		i++;
+	}
+	printf("\n");
+	return 0;
+} */

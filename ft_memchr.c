@@ -6,7 +6,7 @@
 /*   By: rcesar-d <rcesar-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 14:15:41 by rcesar-d          #+#    #+#             */
-/*   Updated: 2024/04/17 18:41:23 by rcesar-d         ###   ########.fr       */
+/*   Updated: 2024/05/08 19:38:05 by rcesar-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,35 +30,16 @@ void	*ft_memchr(const void *s, int c, size_t n)
 }
 
 /* #include <stdio.h>
-#include <string.h>
+int main()
+{
+	const char *str = "Example string for testing";
+	char target = 'f';
+	size_t len = 25;
 
-void test_memchr(const void *s, int c, size_t n) {
-    char *result = memchr(s, c, n);
-    char *ft_result = ft_memchr(s, c, n);
-
-    printf("memchr: %p, ft_memchr: %p\n", result, ft_result);
-    printf("Test %s\n", (result == ft_result) ? "PASSED" : "FAILED");
-}
-
-int main() {
-    const char *str = "Hello, world!";
-    
-    // Test with character present
-    test_memchr(str, 'o', strlen(str));
-    
-    // Test with character not present
-    test_memchr(str, 'x', strlen(str));
-    
-    // Test with n = 0
-    test_memchr(str, 'o', 0);
-    
-    // Test with n less than length of string
-    test_memchr(str, 'o', 5);
-    
-    // Test with n greater than length of string
-    test_memchr(str, 'o', 20);
-
-    // Test with negative character
-    test_memchr(str, 256 + 'o', strlen(str));
-    return 0;
+	char *result = (char *)ft_memchr(str, target, len);
+	if (result != NULL)
+		printf("Character '%c' found at position: %ld\n", target, result - str);
+	else
+		printf("Character '%c' not found in the first %zu characters.\n", target, len);
+	return 0;
 } */

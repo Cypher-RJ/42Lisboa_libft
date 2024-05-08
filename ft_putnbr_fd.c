@@ -6,7 +6,7 @@
 /*   By: rcesar-d <rcesar-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 18:08:33 by rcesar-d          #+#    #+#             */
-/*   Updated: 2024/04/22 18:24:27 by rcesar-d         ###   ########.fr       */
+/*   Updated: 2024/05/08 19:51:53 by rcesar-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,21 @@ void	ft_putnbr_fd(int n, int fd)
 	else
 		ft_putchar_fd(n + 48, fd);
 }
+
+/* #include <unistd.h>
+int main()
+{
+	// Print the number 123 to the standard output
+	ft_putnbr_fd(123, STDOUT_FILENO);
+	ft_putchar_fd('\n', STDOUT_FILENO);
+
+	// Print the number -123 to the standard output
+	ft_putnbr_fd(-123, STDOUT_FILENO);
+	ft_putchar_fd('\n', STDOUT_FILENO);
+
+	// Print the minimum int value to test edge case
+	ft_putnbr_fd(-2147483648, STDOUT_FILENO);
+	ft_putchar_fd('\n', STDOUT_FILENO);
+
+	return 0;
+} */

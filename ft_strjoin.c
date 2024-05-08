@@ -6,7 +6,7 @@
 /*   By: rcesar-d <rcesar-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 19:16:48 by rcesar-d          #+#    #+#             */
-/*   Updated: 2024/04/18 17:58:03 by rcesar-d         ###   ########.fr       */
+/*   Updated: 2024/05/08 19:55:55 by rcesar-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,3 +41,21 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str[i + j] = '\0';
 	return (str);
 }
+/* #include <stdio.h>
+int main()
+{
+	char const *s1 = "Hello, ";
+	char const *s2 = "World!";
+	char *result;
+
+	result = ft_strjoin(s1, s2);
+	if (result == NULL) {
+		printf("Failed to allocate memory for the joined string.\n");
+		return 1;
+	}
+
+	printf("Joined string: %s\n", result);
+	free(result);
+
+	return 0;
+} */

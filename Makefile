@@ -6,7 +6,7 @@
 #    By: rcesar-d <rcesar-d@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/15 20:18:14 by rcesar-d          #+#    #+#              #
-#    Updated: 2024/04/29 21:30:56 by rcesar-d         ###   ########.fr        #
+#    Updated: 2024/05/08 14:56:52 by rcesar-d         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ CFILES = \
 
 B_CFILES = \
 		ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
-		ft_lstdelone.c ft_lstclear.c ft_lstiter.c \
+		ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c \
 
 OFILES = $(CFILES:.c=.o)
 
@@ -33,13 +33,17 @@ CFLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)
 
-$(NAME): $(OFILES) $(B_OFILES)
-	@ar rcs $(NAME) $(OFILES) $(B_OFILES)
+$(NAME): $(OFILES)
+	@ar rcs $(NAME) $(OFILES)
 	@echo "OFILES made!!!"
 
 # so:
 # 	$(CC) -nostartfiles -fPIC $(CFLAGS) $(CFILES)
 # 	gcc -nostartfiles -shared -o libft.so $(OFILES)
+
+bonus: $(B_OFILES)
+	@ar rcs $(NAME) $(B_OFILES)
+	@echo "B_OFILES made!!!"
 
 clean:
 	@rm -f $(OFILES) $(B_OFILES)
@@ -49,6 +53,6 @@ fclean:
 	@rm -f $(NAME)
 	@echo "All removed!!!"
 
-re: fclean $(NAME)
+re: clean fclean all
 
-.PHONY: all clean fclean re so
+.PHONY: all clean fclean re so bonus

@@ -6,7 +6,7 @@
 /*   By: rcesar-d <rcesar-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 19:30:24 by rcesar-d          #+#    #+#             */
-/*   Updated: 2024/04/25 12:22:37 by rcesar-d         ###   ########.fr       */
+/*   Updated: 2024/05/08 15:02:51 by rcesar-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*new;
-	
+
 	new = malloc(sizeof(t_list));
 	if (!new)
 		return (NULL);

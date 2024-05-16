@@ -6,11 +6,10 @@
 /*   By: rcesar-d <rcesar-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 18:08:33 by rcesar-d          #+#    #+#             */
-/*   Updated: 2024/05/08 19:51:53 by rcesar-d         ###   ########.fr       */
+/*   Updated: 2024/05/15 11:58:03 by rcesar-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
 
 void	ft_putnbr_fd(int n, int fd)

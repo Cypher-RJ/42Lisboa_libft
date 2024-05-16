@@ -6,12 +6,11 @@
 /*   By: rcesar-d <rcesar-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 19:30:24 by rcesar-d          #+#    #+#             */
-/*   Updated: 2024/05/08 15:02:51 by rcesar-d         ###   ########.fr       */
+/*   Updated: 2024/05/15 11:58:31 by rcesar-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 t_list	*ft_lstnew(void *content)
 {

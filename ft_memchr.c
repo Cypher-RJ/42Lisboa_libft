@@ -6,11 +6,10 @@
 /*   By: rcesar-d <rcesar-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 14:15:41 by rcesar-d          #+#    #+#             */
-/*   Updated: 2024/05/08 19:38:05 by rcesar-d         ###   ########.fr       */
+/*   Updated: 2024/05/15 11:58:26 by rcesar-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)

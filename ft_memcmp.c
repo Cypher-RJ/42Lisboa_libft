@@ -6,11 +6,10 @@
 /*   By: rcesar-d <rcesar-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 14:15:13 by rcesar-d          #+#    #+#             */
-/*   Updated: 2024/05/08 19:40:03 by rcesar-d         ###   ########.fr       */
+/*   Updated: 2024/05/15 11:58:23 by rcesar-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)

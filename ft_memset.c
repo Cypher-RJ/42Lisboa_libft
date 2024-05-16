@@ -6,11 +6,10 @@
 /*   By: rcesar-d <rcesar-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 14:35:02 by rcesar-d          #+#    #+#             */
-/*   Updated: 2024/05/08 19:45:05 by rcesar-d         ###   ########.fr       */
+/*   Updated: 2024/05/15 11:58:13 by rcesar-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
 
 void	*ft_memset(void *s, int c, size_t n)

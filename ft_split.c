@@ -6,12 +6,11 @@
 /*   By: rcesar-d <rcesar-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 18:09:55 by rcesar-d          #+#    #+#             */
-/*   Updated: 2024/05/08 19:54:10 by rcesar-d         ###   ########.fr       */
+/*   Updated: 2024/05/16 15:32:49 by rcesar-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 static size_t	set_array_size(const char *str, char limiter)
 {
@@ -43,6 +42,17 @@ static size_t	word_position(char const *str, char limiter)
 	return (position);
 }
 
+static char	**free_all(char **final_array)
+{
+	int	i;
+
+	i = 0;
+	while (final_array[i])
+		free(final_array[i++]);
+	free(final_array);
+	return (NULL);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	char		**final_array;
@@ -63,6 +73,8 @@ char	**ft_split(char const *s, char c)
 			s++;
 		lmt = word_position(s, c);
 		final_array[i] = ft_substr(s, 0, lmt);
+		if (final_array[i] == NULL)
+			return (free_all(final_array));
 		s += lmt + 1;
 		i++;
 	}

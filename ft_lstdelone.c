@@ -6,12 +6,11 @@
 /*   By: rcesar-d <rcesar-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 13:23:26 by rcesar-d          #+#    #+#             */
-/*   Updated: 2024/05/08 19:03:38 by rcesar-d         ###   ########.fr       */
+/*   Updated: 2024/05/15 11:58:38 by rcesar-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {

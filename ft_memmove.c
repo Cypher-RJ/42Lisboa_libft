@@ -6,11 +6,10 @@
 /*   By: rcesar-d <rcesar-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 17:45:10 by rcesar-d          #+#    #+#             */
-/*   Updated: 2024/05/08 19:43:48 by rcesar-d         ###   ########.fr       */
+/*   Updated: 2024/05/15 11:58:17 by rcesar-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)

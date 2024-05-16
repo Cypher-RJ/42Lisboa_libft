@@ -6,12 +6,10 @@
 /*   By: rcesar-d <rcesar-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 16:41:48 by rcesar-d          #+#    #+#             */
-/*   Updated: 2024/04/17 18:41:54 by rcesar-d         ###   ########.fr       */
+/*   Updated: 2024/05/15 11:57:42 by rcesar-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strdup(const char *s)

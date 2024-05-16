@@ -6,11 +6,10 @@
 /*   By: rcesar-d <rcesar-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 19:34:31 by rcesar-d          #+#    #+#             */
-/*   Updated: 2024/04/17 18:42:14 by rcesar-d         ###   ########.fr       */
+/*   Updated: 2024/05/15 11:57:07 by rcesar-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)

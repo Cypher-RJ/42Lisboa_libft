@@ -6,11 +6,10 @@
 /*   By: rcesar-d <rcesar-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 14:11:48 by rcesar-d          #+#    #+#             */
-/*   Updated: 2024/04/17 18:42:03 by rcesar-d         ###   ########.fr       */
+/*   Updated: 2024/05/15 11:57:23 by rcesar-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
 
 size_t	ft_strlen(const char *s)

@@ -6,11 +6,10 @@
 /*   By: rcesar-d <rcesar-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/09 17:15:00 by rcesar-d          #+#    #+#             */
-/*   Updated: 2024/05/08 19:08:05 by rcesar-d         ###   ########.fr       */
+/*   Updated: 2024/05/15 11:58:59 by rcesar-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
 
 void	ft_bzero(void *s, size_t n)

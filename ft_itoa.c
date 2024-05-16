@@ -6,13 +6,11 @@
 /*   By: rcesar-d <rcesar-d@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 17:54:35 by rcesar-d          #+#    #+#             */
-/*   Updated: 2024/05/08 19:36:41 by rcesar-d         ###   ########.fr       */
+/*   Updated: 2024/05/15 11:58:47 by rcesar-d         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
-#include <stdlib.h>
 
 static int	ft_numcount(int n)
 {

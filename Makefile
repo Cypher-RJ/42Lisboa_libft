@@ -6,7 +6,7 @@
 #    By: rcesar-d <rcesar-d@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/15 20:18:14 by rcesar-d          #+#    #+#              #
-#    Updated: 2024/05/08 14:56:52 by rcesar-d         ###   ########.fr        #
+#    Updated: 2024/05/15 11:29:55 by rcesar-d         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,10 +37,6 @@ $(NAME): $(OFILES)
 	@ar rcs $(NAME) $(OFILES)
 	@echo "OFILES made!!!"
 
-# so:
-# 	$(CC) -nostartfiles -fPIC $(CFLAGS) $(CFILES)
-# 	gcc -nostartfiles -shared -o libft.so $(OFILES)
-
 bonus: $(B_OFILES)
 	@ar rcs $(NAME) $(B_OFILES)
 	@echo "B_OFILES made!!!"
@@ -55,4 +51,4 @@ fclean:
 
 re: clean fclean all
 
-.PHONY: all clean fclean re so bonus
+.PHONY: all clean fclean re bonus

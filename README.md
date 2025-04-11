@@ -23,7 +23,7 @@ Makefile is where you will create a file to compile your projects. Remember how 
 
 ### Functions from `<ctype.h>`
 
-- [`ft_isalpha`](ft_isalpha.c)	- checks  for  an  alphabetic  character.
+- [`ft_isalpha`](42Lisboa_libft/ft_isalpha.c)	- checks  for  an  alphabetic  character.
 - [`ft_isdigit`](ft_isdigit.c)	- checks for a digit (0 through 9).
 - [`ft_isalnum`](ft_isalnum.c)	- checks for an alphanumeric character.
 - [`ft_isascii`](ft_isascii.c)	- checks whether c fits into the ASCII character set.

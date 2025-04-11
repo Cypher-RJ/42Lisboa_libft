@@ -2,6 +2,8 @@
 
 Libft (Library of Functions)
 
+Libft is a very important project, since this library will be used in future 42 school assignments. If you are a 42 student, I highly recommend you go through the trial and error process of writing your own code and testing it yourself, rather than copy-pasting code you only half-understand. If you've succeeded your piscine, there is no reason you couldn't figure this project out for yourself! Be patient and thorough.
+
 In this project, you will be creating a library of functions, the file structure for this project is the following:
 
 ### .c Files 
